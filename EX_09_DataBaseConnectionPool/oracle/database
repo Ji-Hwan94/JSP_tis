@@ -1,0 +1,21 @@
+drop table member;
+
+create table member(
+    name varchar2(30) not null,
+    userid varchar2(30),
+    pwd varchar2(20) not null,
+    email varchar2(30) not null,
+    phone char(13) not null,
+    admin number(1) DEFAULT 0,
+    PRIMARY KEY (userid)
+);
+
+insert into member values('황지환', 'ghkdrbqhd', '123', 'ghkdrbqhd2@naver.com', '010-5612-4209', 1);
+insert into member values('진보현', 'wlsqhgus', '234', 'wlsqhgus@naver.com', '010-1234-5678', 0);
+insert into member values('김정현', 'rlawjdgus', '456', 'rlawjdgus@naver.com', '010-9874-5641', 0);
+
+commit;
+
+SELECT
+    *
+FROM member;
