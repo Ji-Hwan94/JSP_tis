@@ -10,7 +10,7 @@
 <body>
 <h2>회원 가입</h2>
 '*' 표시 항목은 필수 입력 항목입니다.
-<form action="join.do" method="post" name="frm">
+<form action="main.do" method="post" name="frm">
 	<table>
 		<tr>
 			<td> 이름		</td>

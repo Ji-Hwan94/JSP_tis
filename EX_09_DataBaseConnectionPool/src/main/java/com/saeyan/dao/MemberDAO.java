@@ -141,7 +141,8 @@ public class MemberDAO {
 			pstmt.setString(2, mVo.getUserid());
 			pstmt.setString(3, mVo.getPwd());
 			pstmt.setString(4, mVo.getEmail());
-			pstmt.setInt(5, mVo.getAdmin());
+			pstmt.setString(5, mVo.getPhone());
+			pstmt.setInt(6, mVo.getAdmin());
 			result = pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
